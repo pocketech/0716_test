@@ -6,7 +6,7 @@ import {
   AccordionItemButton,
   AccordionItemPanel
 } from "react-accessible-accordion";
-import "./fancy-example.css";
+import "../../assets/fancy-example.css";
 
 export default function Example() {
   const [fortune, setFortune] = useState(null);
@@ -34,8 +34,8 @@ export default function Example() {
         uuids[0] === "no1"
           ? handleTodayInfo()
           : uuids[0] === "no2"
-          ? handleFortune()
-          : console.log("no3");
+            ? handleFortune()
+            : console.log("no3");
       }}
     >
       <AccordionItem uuid="no1">

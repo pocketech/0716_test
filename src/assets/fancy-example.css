@@ -6,6 +6,7 @@
 .accordion {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
+  
 }
 
 .accordion__item + .accordion__item {
@@ -20,6 +21,7 @@
   width: 100%;
   text-align: left;
   border: none;
+  box-sizing: border-box;
 }
 
 .accordion__button:hover {
