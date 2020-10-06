@@ -1,12 +1,17 @@
 import React from "react";
-import "./styles.css";
-import Example from "./accordion";
+import "./assets/styles.css";
+import Header from "./components/molecules/Header";
+import Footer from "./components/molecules/Footer";
+import Accordion from "./components/atoms/Accordion";
+import Slider from "./components/atoms/Slick";
+
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <Example />
+      <Header text="MYTASK" />
+      <Slider />
+      <Accordion />
+      <Footer text="KentoNakano" />
     </div>
   );
 }
