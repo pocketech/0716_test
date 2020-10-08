@@ -1,37 +1,21 @@
 .App {
   text-align: center;
+  width: 100%;
   min-height: 350vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .inner-container{
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   height: 300vh;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 .inner-container h2{
   text-align: left;
 }
-.layout {margin-top: 20vh;}
-.App-header  {
-  min-width: 960px;
-  background-color: #282c34;
-  height: 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding: 20px;
-  cursor: pointer;
-}
+.layout {margin-top: 30vh;}
 .App-footer  {
-  min-width: 960px;
   background-color: #282c34;
   height: 70px;
   display: flex;
@@ -43,28 +27,42 @@
   padding: 20px;
   cursor: pointer;
 }
-.accordionContainer {
-  height: 20vh;
-}
+
 .slider img{
-  width:100%;
+  width:80%;
+  margin: 0 auto;
   object-fit: cover;
 }
 .slick-prev:before, .slick-next:before {
   color: black !important;
 }
+.slick-next {
+  right: 10px !important;
+}
+.slick-prev {
+  left: 10px !important;
+}
 .MuiSvgIcon-root {
   width: 3.5em !important;
   height: 3.5em !important;
 }
+.MuiAppBar-positionFixed {
+  top: 0;
+  left: 0 !important; 
+  right: 0 !important;
+  position: fixed;
+}
 .MuiButton-textSizeLarge {
   padding: 8px 11px;
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
 }
 .MuiButtonGroup-root {
   border-radius: none !important;
   position: absolute !important;
   right: 40px !important;
+}
+.MuiButtonGroup-groupedTextHorizontal:not(:last-child) {
+  border-right: none !important;
 }
 .MuiTypography-body1 {
   font-size: 3rem !important;
@@ -83,17 +81,16 @@
 }
 @media screen and (max-width:768px) {
   .App {
-    min-height: 400vh;
+    height: 330vh;
   }
   .slider {
     max-width:768px;
-    margin-left: 5rem;
   }
-  .inner-container {
-    width: 100% !important;
+  .inner-conTainer {
+    max-width: 100% !important;
   }
-  .lightbox {
-    margin-left: 5rem;
+  .inner-container h2{
+    text-align: center;
   }
   .lightbox ul {
     flex-wrap: wrap !important;
@@ -106,8 +103,6 @@
     max-height: 400px;
     object-fit: cover;
   }
-  .accordionContainer {
-    margin-left: 5rem;
-  }
+  
 
 }

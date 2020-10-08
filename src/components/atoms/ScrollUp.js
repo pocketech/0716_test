@@ -3,14 +3,6 @@ import { animateScroll as scroll } from "react-scroll";
 import "../../assets/scroll.css";
 
 const ScrollUp = () => {
-  // const [scrollTop, setTop] = useState(null);
-  // useEffect(
-  //   () => {
-  //     const stp = document.querySelector('.scroll');
-  //     setTop(stp.scrollTop);
-
-  //   }
-  // );
   return (
     <div className="scroll scroll-up">
       <a href="#wrap">

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
-// import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
@@ -45,6 +44,7 @@ const useStyles = makeStyles((theme) =>
       }
     },
     "menuicon": { width: "3.5em", height: "3.5em" },
+    "appBar": { width: "100vw", boxSizing: "border-box" },
     "myBar": { backgroundColor: "#282c34", height: "120px", },
     "title": { fontWeight: "bold" },
     "listText": { fontSize: "40px" },
