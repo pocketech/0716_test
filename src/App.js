@@ -1,6 +1,5 @@
 import React from "react";
 import "./assets/styles.css";
-// import Header from "./components/molecules/Header";
 import DrawerHeader from "./components/molecules/DrawerHeader";
 import Footer from "./components/molecules/Footer";
 import Accordion from "./components/atoms/Accordion";
@@ -12,7 +11,6 @@ export default function App() {
   return (
     <div className="App">
       <DrawerHeader />
-      {/* <Header text="MYTASK" /> */}
       <div className="inner-container">
         <div className="layout">
           <h2 name="slider">■Slider</h2>
