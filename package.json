@@ -2,6 +2,7 @@
   "name": "training",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pocketech.github.io/0716_test/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
