@@ -86,8 +86,8 @@
   .slider {
     max-width:768px;
   }
-  .inner-container {
-    width: 100% !important;
+  .inner-conTainer {
+    max-width: 100% !important;
   }
   .inner-container h2{
     text-align: center;
