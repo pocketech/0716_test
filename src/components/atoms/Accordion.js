@@ -7,6 +7,7 @@ import {
   AccordionItemPanel
 } from "react-accessible-accordion";
 import "../../assets/fancy-example.css";
+import Iframe from "react-iframe";
 
 export default function Example() {
   const [fortune, setFortune] = useState(null);
@@ -30,6 +31,7 @@ export default function Example() {
   return (
     <Accordion
       allowZeroExpanded={true}
+      className="accordionContainer"
       onChange={(uuids) => {
         uuids[0] === "no1"
           ? handleTodayInfo()
@@ -67,9 +69,8 @@ export default function Example() {
         </AccordionItemHeading>
         <AccordionItemPanel>
           <p>
-            In ad velit in ex nostrud dolore cupidatat consectetur ea in ut
-            nostrud velit in irure cillum tempor laboris sed adipisicing eu esse
-            duis nulla non.
+            <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.010996507231!2d139.7116861151059!3d35.72594808018392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6b8b0de7dd%3A0xd184e022fc8bf0e6!2z5qCq5byP5Lya56S-44OV44Kh44Km44Oz44OH44O844K344On44Oz44OV44Kn44Oq44KrVEE!5e0!3m2!1sja!2sjp!4v1602127130137!5m2!1sja!2sjp" width="100%" height="400" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" />
+
           </p>
         </AccordionItemPanel>
       </AccordionItem>

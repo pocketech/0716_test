@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
+
 const images = [
   {
     url: "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg",
@@ -9,17 +10,17 @@ const images = [
     alt: "cat1"
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg",
+    url: "https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg",
     id: 1,
     alt: "cat2"
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg",
+    url: "https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782_1280.jpg",
     id: 2,
     alt: "cat3"
   },
   {
-    url: "https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg",
+    url: "https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg",
     id: 3,
     alt: "cat4"
   }
@@ -30,7 +31,7 @@ const MyLightbox = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="lightbox">
       <ul style={{ display: "flex", listStyle: "none" }}>
         {images.map((image, index) => (
           <li key={index}>
