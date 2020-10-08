@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="App">
       <DrawerHeader />
-      <div className="inner-conTainer">
+      <div className="inner-container">
         <div className="layout">
           <h2 name="slider">■Slider</h2>
           <Slider />

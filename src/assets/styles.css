@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   width: 100%;
-  min-height: 350vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,12 +8,14 @@
 .inner-container{
   max-width: 960px;
   margin: 0 auto;
-  height: 300vh;
 }
 .inner-container h2{
   text-align: left;
 }
-.layout {margin-top: 30vh;}
+.layout {margin-top: 20vh;}
+.layout:last-child{
+  height: 55vh;
+}
 .App-footer  {
   background-color: #282c34;
   height: 70px;
@@ -27,7 +28,9 @@
   padding: 20px;
   cursor: pointer;
 }
-
+.slider {
+  margin: 0 auto;
+}
 .slider img{
   width:80%;
   margin: 0 auto;
@@ -79,14 +82,11 @@
   height: 200px;
   object-fit: cover;
 }
-@media screen and (max-width:768px) {
-  .App {
-    height: 330vh;
-  }
+@media screen and (max-width:960px) {
   .slider {
     max-width:768px;
   }
-  .inner-conTainer {
+  .inner-container {
     max-width: 100% !important;
   }
   .inner-container h2{
@@ -105,4 +105,9 @@
   }
   
 
+}
+@media (min-width: 600px)
+
+.MuiToolbar-gutters {
+    padding-left: 48px !important;
 }
